@@ -12,3 +12,8 @@ def about():
     title = "About Agnes!"
     names = ["Agnes","Neema","Mike","David"]
     return render_template("about.html",names=names, title=title)
+
+@app.route('/subscribe')
+def index():
+    title = "AgnesPractise"
+    return render_template("subscribe.html",title=title)
